@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    font-family: 'PixelFont', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.winner-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+}
+
+.winner-info img {
+    width: 150px;
+    height: 150px;
+    image-rendering: pixelated;
+    margin-bottom: 10px;
+}
+
+.winner-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.winner-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #45a049;
+    color: #fff;
+}

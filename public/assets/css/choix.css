@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../font/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    background: #C0C0C0;
+    font-family: 'PixelFont', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+form {
+    background: #FFF;
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid #000;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+form select {
+    font-family: 'PixelFont', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #000;
+    background: #FFF;
+    margin: 10px 0;
+}
+
+form button {
+    display: block;
+    font-family: 'PixelFont', sans-serif;
+    font-size: 18px;
+    padding: 5px 15px;
+    margin: 20px 0 0 0;
+    border: 2px solid #000;
+    background: #FFD700;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #FFC000;
+}
+
+.attaques-liste {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.attaques-liste input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.attaques-liste span {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+}

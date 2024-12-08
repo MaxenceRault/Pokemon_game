@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../font/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #C0C0C0;
+    font-family: 'PixelFont', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.battle-screen {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    background: url('../img/background_fight.png') no-repeat center center;
+    background-size: cover;
+    border: 4px solid #000;
+    image-rendering: pixelated;
+}
+
+.pokemon-area {
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.player-side {
+    bottom: 20px;
+    left: 20px;
+}
+
+.enemy-side {
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.pokemon-sprite {
+    width: 180px;
+    height: 180px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    display: block;
+    margin: 0 auto;
+}
+
+.pokemon-info {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    
+    border: 2px solid #000;
+    border-radius: 8px;
+    width: 190px;
+    height: 145px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-info.player {
+    bottom: 10%; /* Position en bas à droite */
+    right: 10%;
+}
+
+.pokemon-info.enemy {
+    top: 10%; /* Position en haut à gauche */
+    left: 10%;
+}
+
+.hp-bar-container {
+    width: 100%;
+    height: 10px;
+    background: #5c5757;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hp-bar {
+    height: 100%;
+    width: 100%;
+    background: #4caf50;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.hp-bar.hp-medium {
+    background: #ffeb3b;
+}
+
+.hp-bar.hp-low {
+    background: #f44336;
+}
+
+#choixAttaques {
+    width: 600px;
+    margin: 20px auto;
+    background: #FFF;
+    border: 3px solid #000;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+#choixAttaques h3 {
+    margin-top: 0;
+}
+
+.btn-attaque {
+    font-family: 'PixelFont', sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background: #EEE;
+    display: inline-block;
+}
+
+.btn-attaque:hover {
+    filter: brightness(0.9);
+}
+
+.controls {
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.controls button {
+    font-family: 'PixelFont', sans-serif;
+    font-size: 14px;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    background: #90EE90;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #7EDD7E;
+}
+
+.controls button:disabled {
+    background: #DDD;
+    cursor: not-allowed;
+}
+
+.log {
+    width: 600px;
+    height: 150px;
+    margin: 20px auto;
+    background: #FFF;
+    border: 3px solid #000;
+    padding: 10px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.log p {
+    margin: 5px 0;
+}
+
+/* Couleurs par type de bouton attaque (optionnel) */
+.btn-feu {
+    background: #FF4500; 
+    color: #FFF;
+}
+.btn-feu:hover {
+    filter: brightness(0.9);
+}
+
+.btn-eau {
+    background: #1E90FF; 
+    color: #FFF;
+}
+
+.btn-plante {
+    background: #32CD32; 
+    color: #FFF;
+}
+
+.btn-normal {
+    background: #D3D3D3; 
+    color: #000;
+}
+
+.btn-electrique {
+    background: #FFD700; 
+    color: #000;
+}
+
+/* Ajoutez d’autres types si besoin */
